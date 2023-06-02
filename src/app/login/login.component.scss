@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+.login-container {
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  background: linear-gradient(135deg, #faebd7 0%, #ffebcd 100%);
+  .logo {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  .desc {
+    font-size: 34px;
+    letter-spacing: 5px;
+    top: 200px;
+    text-align: right;
+    font-size: 14px;
+    z-index: 100;
+  }
+  .film {
+    width: 300px;
+    position: absolute;
+    bottom: 30px;
+    z-index: 1;
+  }
+  .login-form {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #383838;
+  }
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  .btn-container {
+    .btn {
+      margin-top: 30px;
+    }
+  }
+  .error {
+    position: absolute;
+    bottom: 32px;
+    right: 30px;
+    color: red;
+  }
+}
