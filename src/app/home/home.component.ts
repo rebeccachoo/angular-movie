@@ -12,11 +12,13 @@ import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 export class HomeComponent implements OnInit {
   trendingMovies: any;
   popularMovies: any;
+  theaterMovies: any;
 
   constructor(private http: HttpClient) {}
   ngOnInit(): void {
     this.getTrendingMovies();
     this.getPopularMovies();
+    this.getTheaterMovies();
   }
 
   getTrendingMovies() {
@@ -32,6 +34,14 @@ export class HomeComponent implements OnInit {
       .get('http://localhost:53770/assets/data/popular-movies.json')
       .subscribe((movies) => {
         this.popularMovies = movies;
+        console.log(this.popularMovies);
+      });
+  }
+  getTheaterMovies() {
+    this.http
+      .get('http://localhost:53770/assets/data/theater-movies.json')
+      .subscribe((movies) => {
+        this.theaterMovies = movies;
         console.log(this.popularMovies);
       });
   }

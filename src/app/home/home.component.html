@@ -47,6 +47,30 @@
           </div>
         </div>
       </div>
+
+      <div class="theater-movies">
+        <div class="top">
+          <h4>Theater movies</h4>
+          <div class="view-all">View All</div>
+        </div>
+
+        <div class="movies-thumbnail">
+          <div class="movie" *ngFor="let movie of theaterMovies">
+            <div class="cover">
+              <img [src]="movie.cover" alt="" />
+            </div>
+            <div class="detail">
+              <div class="name">{{ movie.name }}</div>
+              <div class="rating">
+                <app-star-rating
+                  [rating]="movie.rating"
+                  [isReadOnly]="false"
+                ></app-star-rating>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="popular-movies"></div>
   </div>
