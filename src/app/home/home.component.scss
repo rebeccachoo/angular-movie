@@ -2,11 +2,16 @@
   display: flex;
   .all-movies {
     width: 75%;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     min-height: calc(100vh - 80px);
-    border-right: 1px solid blue;
+    // border-right: 1px solid blue;
     .trending-movies {
       padding: 20px;
+    }
+
+    .popular-movies {
+      padding: 0;
+      padding-top: 30px;
     }
     .top {
       display: flex;
@@ -47,11 +52,6 @@
       }
     }
   }
-  .popular-movies {
-    width: 25%;
-    border: 1px solid red;
-    min-height: calc(100vh - 80px);
-  }
 }
 i {
   position: relative;
@@ -67,4 +67,14 @@ i {
   position: absolute;
   top: 0;
   left: 0;
+}
+.rating {
+  padding-right: 5px;
+  position: relative;
+  .rating-value {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-weight: bold;
+  }
 }

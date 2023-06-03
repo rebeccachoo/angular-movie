@@ -16,6 +16,7 @@ import {
   NgbPaginationModule,
   NgbAlertModule,
 } from '@ng-bootstrap/ng-bootstrap';
+import { FeatureModule } from './feature/feature.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {
     MovieComponent,
   ],
   imports: [
+    FeatureModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

@@ -1,0 +1,8 @@
+.rating {
+  display: flex;
+  justify-content: space-between;
+  .rating-value {
+    color: darkcyan;
+    font-weight: bold;
+  }
+}
